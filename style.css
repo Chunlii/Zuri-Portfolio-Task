@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(247, 247, 252);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+.img-intro{
+    padding: 0 30px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    width: 190px;
+    border-radius: 30px;
+}
+.intro-only{
+    padding: 50px 0;
+    text-align: center;
+    border-bottom-right-radius: 30px;
+    box-shadow: 10px 10px 15px -10px rgb(124 76 76 / 80%);
+}
+.intro-only h2 {
+    padding: 10px 10px;
+}
+.paragraph{
+    border-bottom-left-radius: 30px;
+    box-shadow: -10px 10px 15px -10px rgb(124 76 76 / 80%);
+    padding: 50px 30px;
+    margin: 50px 30px 30px 30px;
+}
+.paragraph h3{
+    margin: 10px 0;
+}
+footer{
+    margin: 50px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.skills{
+    border-bottom-right-radius: 30px;
+    box-shadow: 10px 10px 15px -10px rgb(124 76 76 / 80%);
+    padding: 30px 100px 40px 30px;
+    margin-top: 30px;
+}
+.skills p{
+    margin-top: 12px;
+}
+
+.contact{
+    border-top-left-radius: 30px;
+    box-shadow: -10px -10px 15px -10px rgb(124 76 76 / 80%);
+    padding: 30px;
+}
+footer a{
+    color: black;
+    display: flex;
+    padding-top: 5px;
+    text-decoration: none;
+    width: fit-content;
+}
+a:hover{
+    padding-left: 20px;
+    color: rgb(212, 104, 41);
+}
+
+@media screen and (max-width:700px){
+    .container{
+        font-size: .9em;
+        overflow: hidden;
+    }
+    .img-intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .intro-only{
+        border-bottom-left-radius: 30px;
+        box-shadow: -15px 15px 15px -17px rgb(124 76 76 / 80%);
+        margin: 30px 5px;
+    }
+    .paragraph{
+        border-bottom-right-radius: 30px;
+        box-shadow: 15px 15px 15px -17px rgb(124 76 76 / 80%);
+        margin: 30px 20px 30px 5px;
+        padding: 50px 30px 40px 50px;
+    }
+    .skills{
+        padding: 30px 100px 30px 30px;
+    }
+    .contact{
+        margin: 70px 0;
+    }
+}
+
+@media screen and (max-width:600px){
+    .paragraph{
+        padding: 50px 30px 40px 50px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills{
+        border-bottom-left-radius: 30px;
+        box-shadow: -15px 15px 15px -17px  rgb(124 76 76 / 80%);;
+        margin-top: 40px;
+    }
+    .contact{
+        border-bottom-right-radius: 30px;
+        box-shadow: 15px 15px 15px -17px  rgb(124 76 76 / 80%);
+        margin: 70px 0;
+    }
+}
